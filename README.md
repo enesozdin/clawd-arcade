@@ -3,10 +3,15 @@
 While Claude is thinking, the spinner line ("Sauteing...") is replaced by the Clawd mascot acting out the current spinner word in a little arcade-style scene. Clawd always looks like itself: the scenes change, not the character.
 
 ```
-              ┏━━┳━━┓     Ideating…
- ▐▛███▜▌      ┣━━╋━━┫     Clawd breaks a ? block · 12s
-▝▜█████▛▘     ┗━━┻━━┛
-  ▀▀ ▀▀
+             ┏━━━━━┓   Ideating…
+ ▐▛███▜▌     ┃  ?  ┃   Clawd breaks a ? block · 12s
+▝▜█████▛▘    ┗━━━━━┛
+  ▘▘ ▝▝
+
+              ●  ~◉    Conjuring…
+    ▐▛███▜▌  ╱         Clawd casts a fireball · 8s
+   ▝▜█████▛▘╱
+     ▘▘ ▝▝
 ```
 
 - **Terminal:** acts out the word Claude Code shows (Cooking, Brewing, Pondering, ...).
@@ -51,7 +56,7 @@ To try it from a local clone without installing:
 claude --plugin-dir ./clawd-arcade
 ```
 
-Only one spinner mod draws at a time: disable other mods that replace the spinner (such as `clawd-spinner`) while this one is on.
+Only one mod can draw the spinner at a time: if you have another mod that replaces it, disable that one while this one is on.
 
 ## Files
 
