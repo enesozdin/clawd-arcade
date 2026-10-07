@@ -1,0 +1,7 @@
+{
+  "name": "clawd-arcade",
+  "version": "0.1.0",
+  "description": "Clawd acts out the spinner word in little arcade-style scenes while Claude works.",
+  "author": { "name": "Enes Özdin" },
+  "types": "./types/index.d.ts"
+}

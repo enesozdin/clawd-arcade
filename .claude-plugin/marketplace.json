@@ -1,0 +1,12 @@
+{
+  "name": "clawd-arcade",
+  "description": "Clawd Arcade: arcade-style scenes starring the Clawd mascot in the Claude Code spinner.",
+  "owner": { "name": "Enes Özdin" },
+  "plugins": [
+    {
+      "name": "clawd-arcade",
+      "source": "./",
+      "description": "Clawd acts out the spinner word in little arcade-style scenes while Claude works."
+    }
+  ]
+}
