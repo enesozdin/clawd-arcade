@@ -46,11 +46,9 @@ export const register: Register = on => {
     return next(e)
   })
 
-  on('ui.render', { component: 'Spinner' }, async ($, e, next) => {
-    // Clawd only plays while the model is thinking; every other phase keeps the engine's spinner.
-    if (e.props.mode !== 'thinking') {
-      return next(e)
-    }
+  // Clawd plays in every spinner phase (requesting, thinking, tool use, responding):
+  // the spinner word is shown in all of them, and many turns never enter `thinking`.
+  on('ui.render', { component: 'Spinner' }, async ($, e) => {
     const { Box, Text } = $.ui.resolve(e)
     const [tickFrame, chosenWord, startedAt, now] = await Promise.all([
       read($, frame),

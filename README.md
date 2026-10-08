@@ -1,6 +1,6 @@
 # clawd-arcade
 
-While Claude is thinking, the spinner line ("Sauteing...") is replaced by the Clawd mascot acting out the current spinner word in a little arcade-style scene. Clawd always looks like itself: the scenes change, not the character.
+While Claude is working, the spinner line ("Sauteing...") is replaced by the Clawd mascot acting out the current spinner word in a little arcade-style scene. Clawd always looks like itself: the scenes change, not the character.
 
 ```
              ┏━━━━━┓   Ideating…
@@ -16,7 +16,7 @@ While Claude is thinking, the spinner line ("Sauteing...") is replaced by the Cl
 
 - **Terminal:** acts out the word Claude Code shows (Cooking, Brewing, Pondering, ...).
 - **Desktop app:** the desktop row names the current step instead of a word, so the mod picks a word for each turn and keeps the step as a dim detail.
-- **Automatic:** the scene appears on its own while the model is thinking; while Claude calls tools or writes its answer, the usual spinner comes back. There is nothing to open or call.
+- **Automatic:** the scene appears on its own whenever the spinner is shown: while the request is sent, while the model thinks, while Claude calls tools and while it writes its answer. There is nothing to open or call.
 
 No model calls are made; everything runs locally and costs no tokens.
 
